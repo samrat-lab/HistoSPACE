@@ -10,17 +10,19 @@ To ensure the environment is set up correctly, install the following libraries:
 bash
 
 pip install torch torchvision scprep scikit-learn pandas numpy tqdm matplotlib plotly opencv-python
-List of Required Libraries:
+
 ```
-torch – PyTorch for deep learning models.
-torchvision – For pre-trained models and image transformations.
-scprep – For single-cell RNA-seq preprocessing.
-scikit-learn – Machine learning tools for data preprocessing and evaluation.
-pandas – Data manipulation and analysis.
-numpy – Scientific computing with arrays.
-tqdm – Progress bars for loops.
-matplotlib & plotly – Visualization libraries.
-opencv-python – For image processing.
+List of Required Libraries:
+
+- torch – PyTorch for deep learning models.
+- torchvision – For pre-trained models and image transformations.
+- scprep – For single-cell RNA-seq preprocessing.
+- scikit-learn – Machine learning tools for data preprocessing and evaluation.
+- pandas – Data manipulation and analysis.
+- numpy – Scientific computing with arrays.
+- tqdm – Progress bars for loops.
+- matplotlib & plotly – Visualization libraries.
+- opencv-python – For image processing.
 
 ## Data Requirements
 The project requires two main datasets:
@@ -35,9 +37,9 @@ After downloading the datasets, configure the paths in the Python scripts accord
 
 1. prep_tile.py
 
-Run this script after downloading data from ICIAR and STNet and set the data path as `RAW_TILE` for respective datas to generate the tiles.
+Run this script after downloading data from ICIAR and STNet and set the data path as `RAW_TILE` for respective data to generate the tiles.
 
-Execution: Edit `RAW_TILE` inside the script and run following command.
+Execution: Edit `RAW_TILE` inside the script and run the following command.
 ```
 bash
 
@@ -86,7 +88,7 @@ Execution: Prepare the configuration file below in .json formate and pass to --i
 config_file.json
 
 {
-  "exp_path": "/path/to/expression/data.csv",
+  "exp_path": "/path/to/expression/data.csv",# file generated from step 3
   "img_path": "/path/to/image/data.csv",
   "lr_rate": 0.0001,
   "gamma_rate": 0.1,
@@ -108,11 +110,7 @@ python train.py --inp_file config_file.json --gpu 0 --fold 0 --epochs 50 --model
 
 ```
 
-
-Ensure to replace the paths accordingly in this configuration file based on where your datasets are stored.
-
-
-Caution: Ensure that the following variables in your scripts are updated according to your data locations:
+Caution: Ensure that all meta variables in the scripts are updated as per the data locations:
 
 # Citation
 
