@@ -1,6 +1,6 @@
 # Project Overview
 
-This is the code repository of HistoSPACE paper, please follow the paper for more details. The input data includes the ICIAR dataset and spatial transcriptomics data, as mentioned in the ST-NET paper.
+This is the code repository of HistoSPACE paper, please follow the paper for more details. The input data includes the ICIAR dataset and spatial transcriptomics data used in the ST-NET paper.
 
 ## Required Libraries
 To ensure the environment is set up correctly, install the following libraries:
@@ -27,8 +27,8 @@ List of Required Libraries:
 ## Data Requirements
 The project requires two main datasets:
 
-- ICIAR Breast Cancer Dataset
-- STNet Spatial Transcriptomics Dataset (from the ST-NET paper)
+- ICIAR Breast Cancer Dataset [link](https://zenodo.org/records/3632035)
+- STNet Spatial Transcriptomics Dataset [Link](https://github.com/bryanhe/ST-Net)
 
 After downloading the datasets, configure the paths in the Python scripts accordingly.
 
