@@ -1,6 +1,6 @@
 # Project Overview
 
-This is the code repository of HistoSPACE paper, please follow the paper for more details. The input data includes the ICIAR dataset and spatial transcriptomics data used in the ST-NET paper.
+This is the code repository of [HistoSPACE](https://www.sciencedirect.com/science/article/pii/S1046202324002391) paper, please follow the paper for more details. The input data includes the ICIAR dataset and spatial transcriptomics data used in the ST-NET paper.
 
 ## Required Libraries
 To ensure the environment is set up correctly, install the following libraries:
@@ -119,8 +119,9 @@ Please cite our paper:
 @article{kumar2024histospace,
   title={HistoSPACE: Histology-Inspired Spatial Transcriptome Prediction And Characterization Engine},
   author={Kumar, Shivam and Chatterjee, Samrat},
-  journal={arXiv preprint arXiv:2408.03592},
-  year={2024}
+  journal={Methods},
+  year={2024},
+  publisher={Elsevier}
 }
 
 ```
